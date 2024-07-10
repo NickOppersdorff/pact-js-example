@@ -1,9 +1,9 @@
-version: '3.8'
+# version: '3.8'
 
 services:
   kafka:
     image: confluentinc/cp-kafka:6.0.14
-    platform: linux/amd64
+    # platform: linux/amd64
     depends_on:
       - zookeeper
     ports:
@@ -37,6 +37,7 @@ services:
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
+    # platform: linux/amd64
     ports:
       - 8085:8080
     environment:
@@ -46,7 +47,7 @@ services:
 
   zookeeper:
     image: confluentinc/cp-zookeeper:6.0.14
-    platform: linux/amd64
+    # platform: linux/amd64
     ports:
       - '22181:2181'
     environment:

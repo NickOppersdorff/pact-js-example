@@ -14,8 +14,8 @@ describe('Event producer tests', () => {
     },
     logLevel: 'info',
     provider: 'EventProducer',
-    providerVersion: process.env.GITHUB_SHA,
-    providerVersionBranch: process.env.GITHUB_BRANCH,
+    providerVersion: '1.0.0',
+    providerVersionBranch: 'main',
     consumerVersionSelectors: [
       { mainBranch: true },
       { matchingBranch: true },
