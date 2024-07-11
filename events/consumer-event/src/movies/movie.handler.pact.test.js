@@ -31,3 +31,4 @@ describe("Kafka handler", () => {
     });
   });
 });
+
